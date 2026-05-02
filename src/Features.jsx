@@ -1,6 +1,6 @@
 import Images from './assets/Images.png'
 import webss from './assets/webss.png'
-import Civs from './assets/Civs.png'
+import Civs from './assets/civs.png'
 import Me from './assets/me.png'
 import Footer from './Components/Footer'
 
