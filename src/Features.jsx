@@ -5,6 +5,15 @@ import Me from './assets/me.png'
 import Footer from './Components/Footer'
 
 function Features() {
+    function QR (){
+        window.location.href = 'https://qrcodegenerator-free.vercel.app/'
+    }
+    function web(){
+        window.location.href = 'https://samtredia-web-builder.netlify.app/'
+    }
+    function cv() {
+        window.location.href = 'https://resume-craft-builder1.netlify.app/'
+    }
     return(
         <>
         <br />
@@ -18,7 +27,7 @@ function Features() {
                     Create QR Codes<br />for your links
                 </h1>
                 <p>Enhance your marketing strategy with custom QR codes. <br /> Drive engagement and track performance with ease.</p>
-                <button>Create QR Codes →</button>
+                <button onClick={QR}>Create QR Codes →</button>
             </div>
         </section>
         <div className="black" style={{padding: '60px 20px'}}>
@@ -27,7 +36,7 @@ function Features() {
                 <div className="purpl"></div>
                 <p>Create powerful and customizable QR codes with ease. Scan now and turn your links, messages, and content into smart QR codes in just a few clicks.</p>
                 <br />
-                <button>Try it out</button>
+                <button onClick={QR}>Try it out</button>
             </div>
             <img src={Images} alt="" style={{width: 'min(600px, 100%)', borderRadius: '15px', border: '2px solid #818181'}} />
         </div>
@@ -45,7 +54,7 @@ function Features() {
             <p id='ph' style={{padding: '0 16px'}}>Team 1 is a powerful management tool that helps you test, create and organize all your required things in one place.</p>
             <br />
             <br />
-            <button id='but'>Test WebBuilder</button>
+            <button id='but' onClick={web}>Test WebBuilder</button>
             <br />
             <br />
             <br />
@@ -65,7 +74,7 @@ function Features() {
             <br />
             <br />
             <br />
-            <button id='but'>Make a CV</button>
+            <button id='but' onClick={cv}>Make a CV</button>
             <br />
             <br />
             <br />
